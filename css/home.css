@@ -1,0 +1,100 @@
+body{
+    background-color: #FFEABF;
+    min-width: 300px;
+}
+a{
+    color: rgb(24, 166, 169);
+    text-decoration: none;
+}
+nav{
+    background: #ECB340;
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
+}
+nav img {
+    height: 130px;
+    width: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px; 
+    flex: 1; 
+    margin: 0 40px; 
+}
+
+nav#mobile-nav {
+    display: none;
+}
+#mobile-menu {
+    display: none;
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: #ECD540;
+    padding: 20px;
+    right: 0;
+    transition: right .3s ease-in-out;
+}
+#hamburger.active {
+    background: #ECB340;
+}
+@media (max-width: 944px) {
+    nav {
+        display: none;
+    }
+
+    nav#mobile-nav {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: block;
+        right: -320px;
+    }
+    #mobile-menu.visible {
+        right: 0px;
+    }
+}
+
+header {
+    height: 360px;
+    width: 100%;
+    background-color: #B7FF83;
+    color: #b17e07;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+header h1 {
+    font-size: 25px;
+}
+#fnaf:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,5);
+}
+
+#book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+#name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1600px;
+}
+#book:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,5);
+}

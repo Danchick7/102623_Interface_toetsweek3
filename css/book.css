@@ -1,0 +1,106 @@
+body{
+    background-color: #FFEABF;
+    min-width: 300px;
+}
+a{
+    color: rgb(24, 166, 169);
+    text-decoration: none;
+}
+nav{
+    background: #ECB340;
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
+}
+nav img {
+    height: 130px;
+    width: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px; 
+    flex: 1; 
+    margin: 0 40px; 
+}
+
+nav#mobile-nav {
+    display: none;
+}
+#mobile-menu {
+    display: none;
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: #ECD540;
+    padding: 20px;
+    right: 0;
+    transition: right .3s ease-in-out;
+}
+#hamburger.active {
+    background: #ECB340;
+}
+@media (max-width: 944px) {
+    nav {
+        display: none;
+    }
+
+    nav#mobile-nav {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: block;
+        right: -320px;
+    }
+    #mobile-menu.visible {
+        right: 0px;
+    }
+}
+
+header h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#homepage-content p {
+    padding: 20px;
+    width: 500px;
+    font-size: x-large;
+    position: relative;
+    margin-top: -500px;
+    left: 1000px;
+}
+
+#fnaf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 350px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1100px;
+    margin-top: 100px;
+    background-color: #96FF5A;
+}
+#price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+    margin-top: -70px;
+    font-size: x-large;
+}
